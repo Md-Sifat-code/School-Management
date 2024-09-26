@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/d7ab7394cb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+
+    <!-- extra part -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css">
+
+    <!-- end of extra part -->
+    <title>Login</title>
+</head>
+
+<body>
+    <!-- login page landing -->
+    <section class="roboto">
+        <div class="container mx-auto">
+            <div class="hero  min-h-screen">
+                <div class="hero-content  grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="text-center lg:text-left">
+                        <div class="flex flex-row justify-start items-center">
+                            <img class="w-[80px] h-[50px]" src="../images/Screenshot_12.png" alt="">
+                            <h1 class="font-bold text-green-900">বিদ্যালয়</h1>
+                        </div>
+                        <img src="../images/login.jpg" alt="">
+                    </div>
+                    <div class=" bg-base-100 w-full  shrink-0 grid grid-cols-1">
+                        <h1 class="text-center font-bold text-2xl">Welcome Back <i
+                                class="fa-regular fa-face-smile-wink text-blue-500"></i> </h1>
+                        <div class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-bold">Student ID </span>
+                                </label>
+                                <input id="gmail" type="text" placeholder="Your Id" class="input input-bordered"
+                                    required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text font-bold">Password</span>
+                                </label>
+                                <input id="pass" type="password" placeholder="password" class="input input-bordered"
+                                    required />
+                                <label class="label">
+                                    <a href="#" class="label-text-alt link link-hover text-blue-600">Forgot
+                                        password?</a>
+                                </label>
+                            </div>
+                            <div class="form-control mt-6 grid grid-cols-2 gap-6">
+                                <button id="login"
+                                    class="btn btn-outline font-bold text-xl bg-blue-500  text-white hover:border-blue-500 hover:bg-white hover:text-black">Login</button>
+                                <dialog id="my_modal_1" class="modal">
+                                    <div class="modal-box flex flex-col justify-center items-center">
+                                        <i class="fa-regular fa-face-sad-sweat text-blue-300 text-center"></i>
+                                        <h3 class="text-lg font-bold text-center text-red-500 ">Sad!</h3>
+                                        <p class="py-4">Your unfortunately give wrong password or Id number</p>
+                                        <div class="modal-action">
+                                            <form method="dialog">
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <button class="btn btn-outline border-2 rounded-lg px-3 border-blue-300 hover:bg-blue-500 hover:text-white">Close</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </dialog>
+                                <button id="singin"
+                                    class="btn btn-outline font-bold text-xl border-blue-500 hover:bg-blue-400 hover:text-black">Sing
+                                    In</button>
+                            </div>
+                            <div class="flex flex-col mt-6">
+                                <h1 class="text-stone-400 font-medium text-sm">Or you can join with</h1>
+                                <div class="flex flex-row gap-5 mt-4">
+                                    <i
+                                        class="fa-brands fa-facebook p-3  rounded-[42px] border-2 border-blue-500 cursor-pointer hover:bg-blue-500 hover:border-stone-950 hover:text-white"></i>
+                                    <i
+                                        class="fa-brands fa-google p-3 border-2 rounded-[42px] border-blue-500 cursor-pointer hover:bg-blue-500 hover:border-stone-950 hover:text-white"></i>
+                                    <i
+                                        class="fa-brands fa-square-x-twitter p-3 border-2 rounded-[42px] border-blue-500 cursor-pointer hover:bg-blue-500 hover:border-stone-950 hover:text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- java script part -->
+    <script src="../javaScript/index.js"></script>
+</body>
+
+</html>

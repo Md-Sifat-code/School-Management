@@ -1,0 +1,22 @@
+.roboto {
+    font-family: "Roboto", sans-serif;
+
+}
+
+/* poppins */
+.poppins {
+    font-family: "Poppins", sans-serif;
+
+}
+
+/* bg fix */
+#sing {
+    background-image:
+        linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+   
+   /* background: center;
+   
+   background: cover; */
+   background-repeat: no-repeat;
+
+}

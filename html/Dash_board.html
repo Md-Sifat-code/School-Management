@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/d7ab7394cb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- extra part -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css">
+
+    <!-- end of extra part -->
+    <title>Dashboard</title>
+</head>
+
+<body class="poppins">
+    <section>
+        <div class="flex flex-row">
+            <!-- dsh board slider -->
+            <!-- <div class="drawer lg:drawer-open w-[34.5%] border-4 border-red-500">
+                <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content flex flex-col items-center justify-center ">
+                    
+                    <label for="my-drawer-2" class="btn btn-primary drawer-button lg:hidden">
+                        Open drawer
+                    </label>
+                </div>
+                
+            </div> -->
+            <!-- dash board main -->
+            <div class="min-h-screen border-4 md:w-[30%] lg:w-[17%] hidden md:block">
+
+                <ul class="menu bg-base-200 text-base-content min-h-full   bg-[#042954] border-4 ">
+                    <div class="flex flex-row justify-start items-center gap-4">
+                        <img class="w-[80px] h-[50px] rounded-[1px]" src="../images/Screenshot_12.png" alt="">
+                        <p class="text-white mt-3 text-center font-medium text-2xl">বিদ্যালয়</p>
+                    </div>
+                    <!-- Sidebar content here -->
+                    <!-- <li class="text-xl "><a class="flex flex-row justify-between items-center">
+                            <p><i class="fa-solid fa-gauge-high"></i> Dashboard</p> <i
+                                class="fa-solid fa-chevron-right text-[14px]"></i>
+                        </a></li> -->
+                    <li class="mb-4 mt-4">
+                        <p class="text-stone-300 text-xl hover:bg-blue-900"><i
+                                class="fa-solid fa-gauge-high text-[#ffa601] font-bold"></i>Dashboard</p>
+
+                    </li>
+                    <!-- parents -->
+                    <li class="mb-4 mt-4">
+                        <details>
+                            <summary class="text-stone-300 text-xl hover:bg-blue-900"><i
+                                    class="fa-solid fa-family-dress text-[#ffa601]"></i>Parent</summary>
+                            <ul class="bg-transparent">
+                                <li class="text-white bg-[#051f3e] hover:bg-blue-900"><a>Father</a></li>
+                                <li class="text-white bg-[#051f3e] hover:bg-blue-900"><a>Mother</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <!-- Subject -->
+                    <li class="mb-4 mt-4">
+                        <details>
+                            <summary class="text-stone-300 text-xl hover:bg-blue-900"><i
+                                    class="fa-solid fa-books text-[#ffa601]"></i>Subject</summary>
+                            <ul class="bg-transparent">
+                                <li class="text-white bg-[#051f3e] hover:bg-blue-900"><a>Father</a></li>
+                                <li class="text-white bg-[#051f3e] hover:bg-blue-900"><a>Mother</a></li>
+                            </ul>
+                        </details>
+                    </li>
+                    <!-- Class Routine -->
+                    <li class="mb-4 mt-4">
+
+                        <p class="text-stone-300 text-xl hover:bg-blue-900"><i
+                                class="fa-solid fa-calendar-days text-[#ffa601]"></i>Class Routine</p>
+
+                    </li>
+                    <!-- Transport -->
+                    <li class="mb-4 mt-4">
+                        <p class="text-stone-300 text-xl hover:bg-blue-900"><i
+                                class="fa-sharp-duotone fa-solid fa-bus-school text-[#ffa601]"></i>Transport</p>
+
+                    </li>
+                    <!-- Notice -->
+                    <li class="mb-4 mt-4">
+
+                        <p class="text-stone-300 text-xl hover:bg-blue-900"><i
+                                class="fa-solid fa-file-lines text-[#ffa601]"></i>Notice</p>
+                    </li>
+                    <!-- Map -->
+                    <li class="mb-4 mt-4">
+                        <p class="text-stone-300 text-xl hover:bg-blue-900"><i
+                                class="fa-solid fa-map-location-dot text-[#ffa601] "></i>Map</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- main dashboartd -->
+            <div class="w-[80%] p-6">
+                <div class="flex flex-row-reverse md:flex-row justify-between ">
+                    <div class="relative flex items-center w-auto">
+                        <i class="fa-solid fa-magnifying-glass absolute left-3 text-gray-500"></i>
+                        <input type="text" placeholder="Find Something ....."
+                            class="input pl-10 w-full focus:outline-none focus:ring-0 focus:border-transparent" />
+                    </div>
+
+
+
+                    <div class=" flex flex-row items-center gap-5">
+                        <div class="dropdown md:dropdown-end">
+                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                                <div class="w-10 rounded-full">
+                                    <img alt="Tailwind CSS Navbar component" src="../images/kihjfgn (3).jpg" />
+                                </div>
+                            </div>
+                            <ul tabindex="0" class="menu  dropdown-content bg-base-100  lg:z-[1] mt-3 w-56  shadow">
+                                <h1 class="text-center text-xl font-medium bg-[#ffa601] w-full p-3">Sifat</h1>
+                                <li>
+                                    <a class="">
+                                        <i class="fa-regular fa-user"></i>
+                                        My Profile
+
+                                    </a>
+                                </li>
+                                <li><a><i class="fa-solid fa-list-check"></i> Task</a></li>
+                                <li><a><i class="fa-regular fa-messages"></i> Message</a></li>
+                                <li><a><i class="fa-regular fa-gear"></i> Account Settings</a></li>
+                                <li><a id="logout"><i class="fa-solid fa-power-off"></i> Log Out</a></li>
+                            </ul>
+                        </div>
+                        <!-- indicator -->
+                        <div class="indicator">
+                            <span class="indicator-item badge badge-secondary bg-[#2ad7c5] border-white border-2 w-[25px] h-[25px]">9</span>
+                            <button class="w-[]"><i class="fa-regular fa-envelope text-2xl text-stone-500"></i></button>
+                        </div>
+                        <div class="indicator">
+                            <span class="indicator-item badge badge-secondary bg-red-500 w-[25px] h-[25px]">9</span>
+                            <button class="w-[]"><i class="fa-regular fa-bell text-stone-500 text-2xl"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <!-- nav end -->
+                 
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- script -->
+    <script src="../javaScript/dshboard.js"></script>
+</body>
+
+</html>
